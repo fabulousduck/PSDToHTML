@@ -1,4 +1,7 @@
-var awesomeFunction = require('../lib/awesomeModule');
+var convert = require('../lib/PSDToHTML.js');
 
-var k = awesomeFunction(1, 2);
-console.log(k); // k === 3
+convert({
+    filePath: '../test/files/test2.psd'
+})
+    .then(function handleResult(result) {
+    })

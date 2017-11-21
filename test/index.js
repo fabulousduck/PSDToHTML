@@ -1,8 +1,8 @@
 import { assert } from 'chai';
 import awesomeFunction from '../src/awesomeModule';
 
-describe('Awesome test.', () => {
-  it('should test awesome function', () => {
+describe('test psdtohtml', () => {
+  it('should test the psdtphtml module', () => {
     assert(awesomeFunction(1, 1) === 2, 'Not awesome :(');
   });
 });

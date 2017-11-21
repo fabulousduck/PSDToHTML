@@ -1,15 +1,17 @@
 const PSD = require('psd');
 
 export default function convert(config) {
-    const { filePath } = config; 
+    const { filePath } = config;
     return PSD.open(filePath)
         .then(function handleParsedPSD(psd) {
             const { children } = psd.tree().export();
             return generateHTMLStructure(children, 0);
         })
         .then(function handleGeneratedHTMLTree(HTMLTree) {
-            console.log(HTMLTree);
-            return
+            return HTMLTree
+        })
+        .catch(function handleError(err) {
+            console.error(err)
         })
 }
 

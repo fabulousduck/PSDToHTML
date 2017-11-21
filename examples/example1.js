@@ -14,7 +14,6 @@ convert({
 })
 
 function saveFile(HTML, filePath) {
-	console.log('writing to ', filePath)
 	return fs.writeFilePromise(filePath, HTML)
 		.then(function handleFileSaveResult(result) {
 			return result

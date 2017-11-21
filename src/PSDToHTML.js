@@ -5,6 +5,7 @@ export default function convert(config) {
     return PSD.open(filePath)
         .then(function handleParsedPSD(psd) {
             const { children } = psd.tree().export();
+            console.log(children);
             return generateHTMLStructure(children, 0);
         })
         .then(function handleGeneratedHTMLTree(HTMLTree) {
@@ -14,6 +15,7 @@ export default function convert(config) {
             console.error(err)
         })
 }
+
 
 function generateHTMLStructure(elements, depth) {
     return elements.map(function handleElement(element) {

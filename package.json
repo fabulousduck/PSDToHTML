@@ -1,7 +1,7 @@
 {
-  "name": "npm-module-boilerplate-es6",
+  "name": "psd_to_html",
   "version": "1.0.0",
-  "description": "Boilerplate for npm modules.",
+  "description": "Module for generating html pages from psd files",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -17,23 +17,14 @@
     "lib",
     "src"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Travelport-Ukraine/npm-module-boilerplate.git"
-  },
   "keywords": [
-    "boilerplate",
     "npm",
     "module",
     "node",
     "javascript"
   ],
-  "author": "Mark mail.ormark@gmail.com",
+  "author": "Ryan Vlaming <ryanvlaming@icloud.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Travelport-Ukraine/npm-module-boilerplate/issues"
-  },
-  "homepage": "https://github.com/Travelport-Ukraine/npm-module-boilerplate#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",

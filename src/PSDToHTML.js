@@ -10,8 +10,6 @@ module.exports = function () {
 
 
     this.convert = function convert(filePath, config = {}) {
-        console.log(filePath);
-        console.log(utils);
     }
 
 }

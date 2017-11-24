@@ -1,6 +1,6 @@
-const PSD   = require('psd');
-const util  = require('./psdtohtml/util');
-const layer = require('./psdtohtml/layer');
+import PSD from 'psd';
+import util from './psdtohtml/util';
+import layer from './psdtohtml/layer';
 
 module.exports = function () {
     const utils = new util();

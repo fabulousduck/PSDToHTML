@@ -1,4 +1,7 @@
+import uuidv4 from 'uuid/v4';
+
 module.exports = function layer(layer) {
+    this.id = uuidv4();
     this.baseLayer = layer;
     this.children = layer._children;
     

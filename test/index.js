@@ -1,8 +1,10 @@
 import { assert } from 'chai';
-import awesomeFunction from '../src/awesomeModule';
+import converter from '../src/psdtohtml';
 
 describe('test psdtohtml', () => {
   it('should test the psdtphtml module', () => {
-    assert(awesomeFunction(1, 1) === 2, 'Not awesome :(');
+    const converterInstance = new converter();
+    const testFilePath = 'test/files/test2.psd'
+    assert(typeof converterInstance.convert(testFilePath) == Array, 'Failed asserting that converter returns array');
   });
 });
